@@ -8,6 +8,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(exclude = "pets")
 public class Owner extends Person{
     private String address;
     private String city;
