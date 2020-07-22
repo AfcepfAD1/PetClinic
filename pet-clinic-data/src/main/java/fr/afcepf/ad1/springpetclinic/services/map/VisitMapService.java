@@ -2,10 +2,11 @@ package fr.afcepf.ad1.springpetclinic.services.map;
 
 import fr.afcepf.ad1.springpetclinic.model.Visit;
 import fr.afcepf.ad1.springpetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Profile("map")
 @Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
     @Override

@@ -2,9 +2,18 @@ package fr.afcepf.ad1.springpetclinic.model;
 
 import lombok.*;
 
-@Data
-@AllArgsConstructor
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "specialities")
 public class Speciality extends BaseEntity{
+
+    @Column(name = "description")
     private String description;
 }
